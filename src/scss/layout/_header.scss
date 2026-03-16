@@ -3,26 +3,26 @@ section.profile {
     flex-direction: column;
     padding: 0px 16px 80px 16px;
     position: relative;
-    background-image: url('/src/assets/img/ellipses.svg'),
-                      url('/src/assets/img/oval.svg');
+    background-image: url('/img/ellipses.svg'),
+                      url('/img/oval.svg');
     background-repeat: no-repeat; 
     background-position: 0% 19% , right 0px bottom 365px;                  
     @include divider ();
     @include breakpoint (tablet) {
         align-items: normal;
         padding-right: 0;
-        background-image: url('/src/assets/img/ellipses-tablet.svg'),
-                          url('/src/assets/img/oval.svg'),
-                          url('/src/assets/img/photo-adam-2.png');
+        background-image: url('/img/ellipses-tablet.svg'),
+                          url('/img/oval.svg'),
+                          url('/img/photo-adam-2.png');
         background-repeat: no-repeat; 
         background-position: 0% 15% , right 0px bottom 70px, right top; 
         background-size: auto, auto, 42% 90%;
          @include breakpoint (desktop) {
         align-items: normal;
         padding-right: 0;
-        background-image: url('/src/assets/img/ellipses-desktop.svg'),
-                          url('/src/assets/img/oval-desktop.svg'),
-                          url('/src/assets/img/photo-adam-2.png');
+        background-image: url('/img/ellipses-desktop.svg'),
+                          url('/img/oval-desktop.svg'),
+                          url('/img/photo-adam-2.png');
         background-repeat: no-repeat; 
         background-position: 0% 15%, 59% 77%, right top; 
         background-size: auto, auto, 42% 90%;
