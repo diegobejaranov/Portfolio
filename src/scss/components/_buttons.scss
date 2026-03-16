@@ -1,0 +1,14 @@
+a, button {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: $color-green;
+    text-underline-offset: 12px;
+    letter-spacing: 2.1px;
+    text-decoration-thickness: 2px;
+    color: $color-white;
+    // background-color: $color-black;
+    &:hover {
+        color: $color-green;
+    }
+}

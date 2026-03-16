@@ -1,0 +1,28 @@
+@mixin breakpoint($bp) {
+ 
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) { @content; }
+  }  
+  @else if $bp == desktop {
+    @media (min-width: $bp-desktop) { @content; }
+  }
+}
+
+@mixin divider() {
+     &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 4%;      // Esto deja un 5% de espacio a la izquierda
+        width: 92%;
+        height: 1px; 
+        background-color: rgba($color-white, 1);
+     }
+}
+
+        // @if $validornot == "valid" {
+        //   background-color: rgba($color-green, 1)
+        // }
+        // @if $validornot == "invalid" {
+        //   background-color: red
+        // }

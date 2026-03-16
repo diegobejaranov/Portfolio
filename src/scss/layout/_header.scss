@@ -1,0 +1,142 @@
+section.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px 80px 16px;
+    position: relative;
+    background-image: url('/src/assets/img/ellipses.svg'),
+                      url('/src/assets/img/oval.svg');
+    background-repeat: no-repeat; 
+    background-position: 0% 19% , right 0px bottom 365px;                  
+    @include divider ();
+    @include breakpoint (tablet) {
+        align-items: normal;
+        padding-right: 0;
+        background-image: url('/src/assets/img/ellipses-tablet.svg'),
+                          url('/src/assets/img/oval.svg'),
+                          url('/src/assets/img/photo-adam-2.png');
+        background-repeat: no-repeat; 
+        background-position: 0% 15% , right 0px bottom 70px, right top; 
+        background-size: auto, auto, 42% 90%;
+         @include breakpoint (desktop) {
+        align-items: normal;
+        padding-right: 0;
+        background-image: url('/src/assets/img/ellipses-desktop.svg'),
+                          url('/src/assets/img/oval-desktop.svg'),
+                          url('/src/assets/img/photo-adam-2.png');
+        background-repeat: no-repeat; 
+        background-position: 0% 15%, 59% 77%, right top; 
+        background-size: auto, auto, 42% 90%;
+         }
+    }  
+    
+    & header.main-header {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 20px;
+        background-image: linear-gradient(
+            to top, 
+            rgba($color-darkgrey, 0.5), 
+            rgba($color-darkgrey, 0)
+            );
+        padding: 10px 10px 0px 10px;
+        
+        & a.icons {
+            margin-bottom: 49px;
+            @include breakpoint (tablet) {
+                margin: 0;
+                width: 192px;
+                height: 25px;
+                @include breakpoint (desktop) {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        & a {
+            text-align: center;
+        }
+        & img.logo {
+            @include breakpoint (tablet) {
+                margin-left: 10px;
+                width: 172px;
+                height: 32px;
+            }
+        }
+        @include breakpoint (tablet) {
+            padding-top: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-self: normal;
+            background-color: rgba($color-black, 0);
+            background-image: none;
+        }
+    }
+
+    & img.main-photo {
+        display: inline-block;
+        align-self: center;
+        margin-bottom: 40px;
+        width: 174px;
+        height: auto;
+        background-color: rgba($color-darkgrey, 0.5);
+        @include breakpoint (tablet) {
+            display: none;
+        }
+    }
+    & article {
+        max-width: 350px;
+        text-align: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @include breakpoint (tablet) {
+            margin-top: 40px;
+            text-align: justify;
+            align-self: start;
+            max-width: 500px;
+        }
+        & h1 {
+            & span.main-name {
+                font-size: 40px;
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-color: $color-green;
+                text-decoration-thickness: 4px;
+                text-underline-offset: 9px;
+                @include breakpoint (tablet) {
+                    font-size: 70px;    
+                }
+            }
+            @include breakpoint (tablet) {
+                    white-space: pre-wrap;
+                    text-align: left;
+                    max-width: 600px;
+                    font-size: 70px;
+                    padding-left: 16px;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+            }
+        }
+        & p {
+            @include breakpoint (tablet) {
+                    font-size: 18px;
+                    max-width: 450px;
+                    text-align: left;
+                    padding-left: 16px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+            }
+        } 
+        
+        & a {
+            @include breakpoint (tablet) {
+                    padding-left: 16px;
+                    max-width: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    @include breakpoint (tablet) {
+        font-size: 72px;
+    }
+}
+
+p {
+    color: $color-lightgrey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+span {
+     font-size: 16px;
+     line-height: 28px;
+     font-weight: normal;
+     color: $color-lightgrey;
+ }
+
+ input, textarea {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+ }
+
